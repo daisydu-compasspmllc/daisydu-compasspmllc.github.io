@@ -4,12 +4,18 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <script>
-        document.getElementById('buttonid').addEventListener('click', openDialog);
-        function openDialog() {
-            document.getElementById('fileid').click();
+        function setup() {
+                document.getElementById('buttonid').addEventListener('click', openDialog);
+                function openDialog() {
+                    document.getElementById('fileid').click();
+                }
+                document.getElementById('fileid').addEventListener('change', submitForm);
+                function submitForm() {
+                    document.getElementById('formid').submit();
+                }
         }
     </script>
-<body>
+<body onload="setup()">
     <h2>Application Form</h2>
     <h4>To apply, please take the time to fill out all the information below.</h4>
     <div class="inner contact">
