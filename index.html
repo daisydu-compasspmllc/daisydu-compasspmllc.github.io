@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <script>
+        document.getElementById('buttonid').addEventListener('click', openDialog);
+        function openDialog() {
+            document.getElementById('fileid').click();
+        }
+    </script>
+<body>
+    <h2>Application Form</h2>
+    <h4>To apply, please take the time to fill out all the information below.</h4>
+    <div class="inner contact">
+        <!-- Form Area -->
+        <div class="contact-form">
+            <!-- Form -->
+            <form id="contact-us" >
+                <!-- Left Inputs -->
+                <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                    <!-- First Name -->
+                    <input type="text" name="first name " id="fname" required="required" class="form" placeholder=" First Name" />
+                    <!-- Last Name -->
+                    <input type="text" name="last name " id="lname" required="required" class="form" placeholder=" Last Name" />
+                    <!-- Phone -->
+                    <input type="text" name="phone number " id="phone" required="required" class="form" placeholder=" Phone" />
+                    <!-- Email -->
+                    <input type="email" name="email " id="mail" required="required" class="form" placeholder=" Email" />
+                    <!-- Present Address -->
+                    <input type="text" name="present address " id="address" required="required" class="form" placeholder=" Present Address" />
+                    <!-- ID -->
+                    <input id='fileid' type='file' hidden/>
+                    <input id='buttonid' type='button' required="required" class="form" value='Upload ID' placeholder=" Upload ID" />
+
+
+                    <div class='radio'>
+                        <p>Which Property?</p>
+                        <input type="radio" name="location" required="required" value="GOIN 9th"> GOIN 9th<br><br>
+                        <input type="radio" name="location" required="required" value="GOIN Brooklyn"> GOIN Brooklyn<br>
+                        <br>
+                    </div>
+                    <!-- Lease Term  -->
+                    <input type="text" name="Lease Term" id="lease term" required="required" class="form" placeholder="Lease Term - Example: 6 Months" />
+                    <!-- Move-In Date -->
+                    <input type="text" name="Move-In Date" id="date" required="required" class="form" placeholder="Move-In Date" />
+                    <div class='radio'>
+                        <p>Do you need to reserve a parking spot? (Limited Spots)</p>
+                        <input type="radio" name="parking" required="required" value="y"> Yes<br><br>
+                        <input type="radio" name="parking" required="required" value="n"> No<br>
+                    </div>
+                    <h5> Emergency Contact </h5>
+                    <!-- Full Name -->
+                    <input type="text" name="full name" id="efn" required="required" class="form" placeholder="Full Name" />
+                    <!-- Move-In Date -->
+                    <input type="text" name="Phone Number" id="ep" required="required" class="form" placeholder="Phone Number" />
+                    <!-- Move-In Date -->
+                    <input type="text" name="Relation to Tenant" id="er" required="required" class="form" placeholder="Relation to Tenant" />
+                </div>
+                <!-- End Left Inputs -->
+               
+
+
+                <!-- Bottom Submit -->
+                <div class="relative fullwidth col-xs-12">
+                    <!-- Send Button -->
+                    <button type="submit" id="submit" class="form-btn semibold">Submit</button> 
+                </div><!-- End Bottom Submit -->
+                <!-- Clear -->
+                <div class="clear"></div>
+            </form>
+
+            <!-- Your Mail Message -->
+            <div class="mail-message-area">
+                <!-- Message -->
+                <div class="alert gray-bg mail-message not-visible-message">
+                    <strong>Thank You !</strong> Your email has been delivered.
+                </div>
+            </div>
+
+        </div><!-- End Contact Form Area -->
+    </div><!-- End Inner -->
+
+</body>
+</html>
+
+
