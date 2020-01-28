@@ -56,20 +56,24 @@ h5 {
   transition: all 0.4s;
 }
 
-.radio {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+.r {
+  border:1px solid rgba(0, 0, 0, 0.075);
   color:#727272 !important;
+  font-size:13px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.form:hover {
+.radio {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form:hover, .radio:hover {
   border:1px solid #8BC3A3;
 }
 
-.form:focus {
+.form:focus, .radio:focus {
   color: white;
   outline: none;
   border:1px solid #8BC3A3;
