@@ -67,6 +67,7 @@ h5 {
 
 .radio {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:13px;
   color:#727272 !important;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
